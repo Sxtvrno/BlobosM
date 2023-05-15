@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>NewNet</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mine.css">
+
+  <script>
+    function alerta() {
+      swal("Correo enviado correctamente", "Nos pondremos en contacto con usted", "success");
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Principal.html"><img src="img/newnet.jpg" width="70px" height="40px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Principal.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Carrito.html">Nosotros</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
+              <button class="btn btn-outline-success">Buscar</button>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+
+
+
+    <div class="container">
+      <br>
+
+      <div class="row g-5">
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Contáctanos y la brevedad un ejecutivo se contactará con usted.</h4>
+
+          <h4 id="temperatura"></h4>
+
+
+          <div class="needs-validation" novalidate="">
+            <form>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="txtnombre" placeholder="" value="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                  <h4 id="r_txtnombre"></h4>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="txtemail" placeholder="" value="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+
+
+                <div class="col-12">
+                  <label class="form-check-label">RUT</label>
+                  <input type="radio" class="form-check-input" name="flexRadioDefault" id="rbtnRUT" />
+                  <label class="form-check-label">PASAPORTE</label>
+                  <input type="radio" class="form-check-input" name="flexRadioDefault" id="rbtnPasaporte" /><br>
+                  <input type="text" class="form-control" id="txtidentificador"
+                    placeholder="Si es RUT debe considerar -(Guión) y digito verificador" /><br>
+                </div>
+
+
+
+                <div class="col-12">
+                  <h6>Ingrese un comentario</h6>
+                  <textarea class="form-control" rows="10" id="txtaComentario">
+
+                                </textarea>
+                </div>
+
+              </div>
+              <hr class="my-4">
+              <input class="w-20 btn btn-primary btn-lg" type="submit" id="btnenviar" value="Enviar">
+              <input class="w-20 btn btn-primary btn-lg" type="reset" value="Borrar" id="btnreset">
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="Contacto.html">Contactenos</a>
+      </p>
+      <p class="mb-1">NewNet</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src='js/main.js'></script>
+
+
+
+</body>
+
+</html>
